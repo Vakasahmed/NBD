@@ -31,7 +31,7 @@ const IndexPage = () => {
   return (
     <>
       <main style={{
-        backgroundImage: `url(./${bg1})`,
+        backgroundImage: `url(${bg1})`,
         backgroundSize: 'cover',
         backgroundPosition: 'center',
         width: '100%',
@@ -40,7 +40,6 @@ const IndexPage = () => {
         <Modal title="Basic Modal" visible={isModalOpen} onOk={handleOk} onCancel={handleCancel}>
           <h2>🎆Happy Birthday Dear Nida🎆</h2>
           <img src={bdance} width={'400px'} alt="Birthday Dance" />
-          {/* Optionally, you can add the audio element here */}
         </Modal>
       </main>
       <div className="btn">
