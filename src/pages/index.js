@@ -31,7 +31,7 @@ const IndexPage = () => {
   return (
     <>
       <main style={{
-        backgroundImage: `url(${bg1})`,
+        backgroundImage: `url(./${bg1})`,
         backgroundSize: 'cover',
         backgroundPosition: 'center',
         width: '100%',
