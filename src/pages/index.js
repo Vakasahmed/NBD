@@ -11,11 +11,7 @@ import './main.css'
 
 const IndexPage = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
-  const audio = useMemo(() => new Audio(bsong), []);
-
-  useEffect(()=>{
-    //popUp
-  },[])
+  const audio = useMemo(() => typeof Audio !== 'undefined' ? new Audio(bsong) : null, []);
 
   const showModal = () => {
     setIsModalOpen(true);
